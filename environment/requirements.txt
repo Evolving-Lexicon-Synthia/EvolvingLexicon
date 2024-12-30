@@ -1,0 +1,11 @@
+numpy
+scipy
+nltk
+tensorflow
+scikit-learn
+pandas
+requests
+psycopg2-binary
+sqlalchemy
+matplotlib
+sympy
