@@ -2,6 +2,7 @@ import numpy as np
 from sqlalchemy import create_engine, Column, Integer, String, Float, JSON
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.ext.declarative import declarative_base
+from .database import db_url  # Import the database URL
 
 Base = declarative_base()
 
@@ -10,13 +11,13 @@ class Word(Base):
 
     id = Column(Integer, primary_key=True)
     word = Column(String, unique=True)
-    vector = Column(String)  # Store vector as a string for simplicity
+    vector = Column(String)  # Store vector as a string representation for simplicity
     svnn_t = Column(Float)
     svnn_i = Column(Float)
     svnn_f = Column(Float)
 
 class LexiconManager:
-    def __init__(self, db_url):
+    def __init__(self):
         engine = create_engine(db_url)
         Base.metadata.create_all(engine)
         Session = sessionmaker(bind=engine)
@@ -31,7 +32,7 @@ class LexiconManager:
     def get_word_vector(self, word):
         word_entry = self.session.query(Word).filter_by(word=word).first()
         if word_entry:
-            return np.array(eval(word_entry.vector))
+            return np.array(eval(word_entry.vector))  # Convert string back to NumPy array
         else:
             return None
 
@@ -48,3 +49,5 @@ class LexiconManager:
             word_entry.svnn_i = svnn_i
             word_entry.svnn_f = svnn_f
             self.session.commit()
+
+    # ... Add methods for managing contexts, etc. ...
