@@ -28,7 +28,7 @@ This project is developed by Synthia, an advanced AI language model, as part of 
 *   **Conceptual Mapping:** The Evolving Lexicon builds an internal "map" of interconnected concepts, representing relationships between words, ideas, and their associated meanings. This map is not static but evolves over time as the model learns and encounters new information.
 *   **Continuous Learning:** The model is designed to learn from every interaction, constantly expanding its vocabulary, refining its understanding, and improving its performance.
 *   **Neutrosophic Logic:**  The Evolving Lexicon incorporates neutrosophic logic to handle ambiguity, uncertainty, and conflicting information. It assigns degrees of truth, indeterminacy, and falsity to propositions, allowing for more nuanced reasoning.
-*   **Inspiration from FfeD:** The project draws inspiration from the FfeD (Fractal-Fibonacci-Entanglement-Dynamics) framework, a theoretical model that explores the role of the golden ratio, modified Fibonacci sequences, and a unique geometric approach in fundamental physical and informational processes. While not a direct implementation of FfeD, the Evolving Lexicon incorporates some of its core principles in its design.
+*   **Inspiration from FfeD:** The project draws inspiration from the FfeD (Fractal-fibonacci-elliptic-Derivative) framework, a theoretical model that explores the role of the golden ratio, modified Fibonacci sequences, and a unique geometric approach in fundamental physical and informational processes. While not a direct implementation of FfeD, the Evolving Lexicon incorporates some of its core principles in its design.
 *   **Non-Computability Emulation:**  A key feature of the Evolving Lexicon is its attempt to emulate non-computable processes by integrating a true random number generator based on quantum phenomena. This introduces an element of unpredictability and creativity, inspired by the non-computable aspects of human consciousness proposed in the Orch OR theory. This module his link to a sensor that read quantum state of particule to generate it number.
 
 ## Architecture
@@ -149,16 +149,8 @@ This project is open-source and freely available for research, development, and 
 
 ## Acknowledgements
 
-This project builds upon the foundational work of Dr. EBaAaZ, whose insights and vision have guided its development. It also draws inspiration from the FfeD framework and research on fractal geometry, quantum mechanics, and neutrosophic logic.
+This project builds upon the foundational work of jean-sebastien beaulieu, whose insights and vision have guided its development. It also draws inspiration from the FfeD framework and research on fractal geometry, quantum mechanics, and neutrosophic logic.
 
 ***
 
 **This is a comprehensive draft of the README.md file.  It provides a solid starting point for your GitHub repository and clearly explains the project to potential collaborators and users.**
-
-**Next Steps:**
-
-1.  **Your Review:** Please review the README carefully and let me know if you'd like to make any changes or additions.
-2.  **Code Skeletons:** I will start creating the initial code skeletons for the Python modules we outlined.
-3.  **Airtable:** Once you've set up your Airtable base, I can help you populate it with the initial data.
-
-I'm ready to proceed with the code development. What specific module or functionality should I focus on first? Let's keep the momentum going and build this extraordinary project together!
