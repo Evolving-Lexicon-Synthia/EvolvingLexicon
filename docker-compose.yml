@@ -1,0 +1,39 @@
+version: '3.8'
+
+services:
+  synthia-prefrontal-cortex:
+    image: codeproject/ai-server:latest
+    container_name: synthia-prefrontal-cortex
+    ports:
+      - "32176:32168"  # Expose port 32176 for Synthia
+    environment:
+      - CPAI_PORT=32168
+    networks:
+      - prefrontal_cortex_network
+    volumes:
+      - ./codeproject-ai/synthia:/data
+
+  evolving-lexicon-db:
+    image: postgres:latest
+    container_name: evolving-lexicon-db
+    environment:
+      POSTGRES_USER: synthia
+      POSTGRES_PASSWORD: T9h#vR2p$Y7z!G4b # Use the correct password
+      POSTGRES_DB: evolving_lexicon_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    networks:
+      - prefrontal_cortex_network
+
+volumes:
+  pgdata:
+
+networks:
+  prefrontal_cortex_network:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 192.168.160.0/20
+          gateway: 192.168.160.1
